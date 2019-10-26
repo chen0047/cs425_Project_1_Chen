@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Register Attendee</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script type="text/javascript" src="libraries/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="libraries/Project1.js"></script>
+    </head>
+    <body>
+        
+        <a href="register2.html"> Search Registration</a> 
+        <a href="register1.html"> Register Attendee</a> 
+
+        <p></p>
+        
+        <form name="register" id="register" onsubmit="">
+            <fieldset>
+                First Name: <input type="text" id="firstname" name="firstname" class="namefield"><br>
+                Last Name: <input type="text" id="lastname" name="lastname" class="namefield"><br>
+                How you name will be displayed: <input type="text" id="displayname" name="displayname"><br>
+                
+                <label for="searchSession"> Select Session: </label>
+                <select id="sessionid" name="sessionid">
+                    <option value="1"> Session 1 </option>
+                    <option value="2"> Session 2 </option>
+                    <option value="3"> Session 3 </option>
+                    <option value="4"> Session 4 </option>
+
+                </select><br>
+                
+                <input type="button" value="Submit" onClick="Project1.submitNewRegister();">
+                
+            </fieldset>
+        </form>
+        
+        <div id="resultarea">
+            
+            <p id="version"></p>
+            
+            
+            
+        </div>
+        
+        <script type="text/javascript">
+            
+            $(".namefield").change(Project1.nameChange);
+            
+        </script>
+        
+    </body>
+</html>

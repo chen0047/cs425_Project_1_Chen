@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--meta http-equiv="Content-Type" content="text/html; charset=UTF-8"-->
+        
+        <title>Search Registration</title>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script type="text/javascript" src="libraries/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="libraries/Project1.js"></script>   
+        
+    </head>
+    <body>
+        
+        <a href="register2.html"> Search Registration</a>
+        <a href="register1.html"> Register Attendee</a> 
+        
+        <p></p>
+        
+        <form name="searchform" id="searchform" > 
+            
+            <fieldset>
+                    <label for="session">Search Session: </label>
+                        <select id="session" name="session">
+                            <option value="1"> Session 1 </option>
+                            <option value="2"> Session 2 </option>
+                            <option value="3"> Session 3 </option>
+                            <option value="4"> Session 4 </option>
+                        </select>
+                    <input type="button" value="Submit" onclick="Project1.submitSessionForm();">
+                
+            </fieldset>
+            
+        </form>
+        
+        
+        <div id="resultarea">
+            
+            <p id="version"></p>
+            
+        </div>
+        
+        
+    </body>
+</html>
